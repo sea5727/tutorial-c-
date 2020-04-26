@@ -14,6 +14,7 @@
 
 int main()
 {
+  std::cout << "BOOST_VERSION:" << BOOST_VERSION << std::endl;
   boost::asio::io_service io;
 
   boost::asio::deadline_timer t(io, boost::posix_time::seconds(5));
